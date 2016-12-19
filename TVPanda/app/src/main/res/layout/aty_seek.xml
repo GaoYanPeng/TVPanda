@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dian_40dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dian_40dp">
+        <ImageView
+            android:id="@+id/seek_ico_return"
+            android:layout_marginLeft="@dimen/dian_20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_return_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginRight="@dimen/dian_10dp"
+            android:layout_marginLeft="@dimen/dian_20dp"
+            android:paddingLeft="@dimen/dian_10dp"
+            android:textColorHint="@color/colorTextGrayLine"
+            android:hint="搜索房间 ID、主播名称"
+            android:layout_toLeftOf="@+id/seek_shouye"
+            android:layout_toRightOf="@+id/seek_ico_return"
+            android:background="@drawable/seek_shape"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:id="@+id/seek_shouye"
+            android:layout_marginRight="@dimen/dian_20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/shouye_icon_search"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+</LinearLayout>
