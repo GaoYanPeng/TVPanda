@@ -1,7 +1,7 @@
 package com.gaoyanpeng.tvpanda.ok;
 
 /**
- * Created by 高延鹏.on 16/8/30.
+ * Created by 高延鹏.on 16/12/20.
  */
 public class NetTool  implements NetInterface{
     private static NetTool ourInstance;

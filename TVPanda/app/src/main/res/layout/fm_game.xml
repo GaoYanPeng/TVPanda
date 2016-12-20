@@ -4,7 +4,9 @@
               android:background="@color/colorGrayLineX"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
+        <!--android:overScrollMode="never"去掉滑动到顶端的效果-->
     <android.support.v7.widget.RecyclerView
+        android:overScrollMode="never"
         android:paddingRight="@dimen/dian_5dp"
         android:id="@+id/game_ryl"
         android:layout_width="match_parent"
