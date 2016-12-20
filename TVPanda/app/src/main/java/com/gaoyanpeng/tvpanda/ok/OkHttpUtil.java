@@ -18,13 +18,12 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by 高延鹏.on 16/8/30.
+ * Created by 高延鹏.on 16/12/20.
  */
 public class OkHttpUtil implements NetInterface {
     private OkHttpClient mClient;
     //这样定义的handler对象无论在哪里创建的 都是属于主线程的
-    private Handler mHandler =
-            new Handler(Looper.getMainLooper());
+    private Handler mHandler = new Handler(Looper.getMainLooper());
     private Gson mGson;
     private String mResult;
 

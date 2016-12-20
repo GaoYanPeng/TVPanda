@@ -31,7 +31,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:textColor="@color/colorDarkBlue"
-            android:textSize="19sp"
+            android:textSize="@dimen/title_tv_19"
             android:visibility="gone"/>
 
         <ImageView
