@@ -4,6 +4,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:name=".app.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,6 +19,7 @@
         </activity>
         <activity android:name=".seek.SeekAty"/>
         <activity android:name=".set.SettingAty"/>
+        <activity android:name=".game.gamedetails.GameDetailsAty"/>
     </application>
 
 </manifest>

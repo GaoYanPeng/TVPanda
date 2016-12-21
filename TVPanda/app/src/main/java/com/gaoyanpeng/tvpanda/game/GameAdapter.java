@@ -7,8 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.bumptech.glide.Glide;
 import com.gaoyanpeng.tvpanda.R;
+import com.gaoyanpeng.tvpanda.onclick.RecyclerViewOnClick;
 
 
 /**游戏页的适配器
@@ -17,6 +19,15 @@ import com.gaoyanpeng.tvpanda.R;
 
 public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameVH> {
     private Context mContext;
+    //实现接口
+    private RecyclerViewOnClick mRecyclerViewOnClick;
+    private String mData;
+
+
+    public GameAdapter setRecyclerViewOnClick(RecyclerViewOnClick recyclerViewOnClick) {
+        mRecyclerViewOnClick = recyclerViewOnClick;
+        return this;
+    }
 
     public GameAdapter(Context context) {
         mContext = context;
@@ -38,11 +49,19 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameVH> {
     }
 
     @Override
-    public void onBindViewHolder(GameVH holder, int position) {
+    public void onBindViewHolder(GameVH holder, final int position) {
         //名字
         holder.mGameName.setText(mGameBean.getData().get(position).getCname());
         //图片
        Glide.with(mContext).load(mGameBean.getData().get(position).getImg()).into(holder.mGameItemPic);
+
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               mRecyclerViewOnClick.onClick(position);
+            }
+        });
     }
 
     @Override

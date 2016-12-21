@@ -9,6 +9,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.gaoyanpeng.tvpanda.app.MyApp;
+
 /**
  * Created by 高研鹏 on 2016/12/21.
  */
@@ -111,6 +114,18 @@ public class CapsulationViewHolder extends RecyclerView.ViewHolder {
     public CapsulationViewHolder setImage(int imageViewId, int imageView) {
         ImageView image = getView(imageViewId);
         image.setImageResource(imageView);
+        return this;
+    }
+
+    /**
+     * 加载网络图片
+     * @param imageViewId
+     * @param url
+     * @return
+     */
+    public CapsulationViewHolder setNetImage(int imageViewId,String url){
+        ImageView image = getView(imageViewId);
+        Glide.with(MyApp.getContext()).load(url).into(image);
         return this;
     }
 
