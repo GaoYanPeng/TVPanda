@@ -10,14 +10,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.gaoyanpeng.tvpanda.R;
 import com.gaoyanpeng.tvpanda.base.BaseActivity;
 import com.gaoyanpeng.tvpanda.seek.SeekAty;
 import com.gaoyanpeng.tvpanda.set.SettingAty;
-
-
 public class MainActivity extends BaseActivity implements ViewPager.OnPageChangeListener, View.OnClickListener {
+    //想要在主界面写告诉我一声
     private TabLayout mTabLayout;
     private ViewPager mViewPager;
     private MainAdapter mMainAdapter;

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">TVPanda</string>
+    <string name="loin">点击登入</string>
+    <string name="mine_my_help">我要当主播</string>
+    <string name="mine_follow">我的订购</string>
+    <string name="mine_history">观看历史</string>
+    <string name="mine_lishi">私信</string>
+    <string name="mine_activity">活动中心</string>
+    <string name="mine_remind">开播提醒</string>
+    <string name="mine_feedback">意见反馈</string>
 </resources>

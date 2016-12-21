@@ -1,7 +1,7 @@
 package com.gaoyanpeng.tvpanda.ok;
 
 /**
- * Created by 高延鹏.on 16/8/30.
+ * Created by 高延鹏.on 16/12/20.
  */
 public interface NetInterface {
     void startRequest(String url, onHttpCallBack<String> callBack);
