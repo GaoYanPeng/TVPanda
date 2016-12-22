@@ -114,7 +114,7 @@ public class CommonFragment extends BaseFragment {
                 commonAdapter.setCommonBean(response);
                 for (int i = 0; i < response.getData().getBanners().size(); i++) {
                     list.add(response.getData().getBanners().get(i).getBigimg());
-                    titleList.add(response.getData().getBanners().get(i).getTitle());
+                    //titleList.add(response.getData().getBanners().get(i).getTitle());
                 }
                 if (list.size() == 0){
                     banner.setVisibility(View.GONE);
@@ -123,7 +123,8 @@ public class CommonFragment extends BaseFragment {
                     banner.setImages(list);
                     banner.setImageLoader(new ImageLoad());
                     banner.setBannerAnimation(Transformer.DepthPage);
-                    banner.setBannerTitles(titleList);
+                    //先不要了
+                   // banner.setBannerTitles(titleList);
                     banner.start();
                 }
             }

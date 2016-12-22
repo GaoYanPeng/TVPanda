@@ -1,4 +1,4 @@
-package com.gaoyanpeng.tvpanda.live;
+package com.gaoyanpeng.tvpanda.live.reuse;
 
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
@@ -7,14 +7,13 @@ import android.util.Log;
 import android.widget.LinearLayout;
 
 import com.gaoyanpeng.tvpanda.R;
+import com.gaoyanpeng.tvpanda.api.Api;
 import com.gaoyanpeng.tvpanda.base.BaseFragment;
+import com.gaoyanpeng.tvpanda.live.LiveBean;
+import com.gaoyanpeng.tvpanda.live.LiveRVAdapter;
 import com.gaoyanpeng.tvpanda.ok.NetTool;
 import com.gaoyanpeng.tvpanda.ok.onHttpCallBack;
 import com.gaoyanpeng.tvpanda.onclick.RecyclerViewOnClick;
-import com.google.gson.Gson;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * Created by Administrator on 2016/12/20.
@@ -46,7 +45,7 @@ public class ReuseFragment extends BaseFragment {
             String cate = bundle.getString("data");
             Log.d("网址", cate);
 
-            mUrl = URLLive.cateHead + cate + URLLive.cateFoot;
+            mUrl = Api.CATEHead + cate + Api.CATEFoot;
         }
 
         OkNetMethod();

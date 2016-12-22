@@ -8,14 +8,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@mipmap/home_list_item_bg"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@drawable/title_color"
         android:layout_gravity="center_vertical"
-        android:id="@+id/tv_title_custom_tab"
-        android:text="标题"/>
+        android:id="@+id/tv_title_custom_tab"/>
 
 </LinearLayout>

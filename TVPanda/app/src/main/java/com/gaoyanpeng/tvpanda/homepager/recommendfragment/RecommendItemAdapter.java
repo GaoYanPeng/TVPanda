@@ -16,7 +16,7 @@ import com.gaoyanpeng.tvpanda.R;
 
 import java.util.List;
 
-/**
+/**推荐每一行里的 Recycler Item
  * Created by 裴亮 on 16/12/21.
  */
 
@@ -70,10 +70,10 @@ public class RecommendItemAdapter extends RecyclerView.Adapter<RecommendItemAdap
         private TextView watchCount;
         public RecommendItemViewHolder(View itemView) {
             super(itemView);
-            pic = (ImageView) itemView.findViewById(R.id.iv_pic_item_recommend);
-            desc = (TextView) itemView.findViewById(R.id.tv_title_item_pic_recommend);
-            username = (TextView) itemView.findViewById(R.id.tv_username_pic_item_recommend);
-            watchCount = (TextView) itemView.findViewById(R.id.tv_count_item_pic_recommend);
+            pic = (ImageView) itemView.findViewById(R.id.iv_pic_item_recommend_t);
+            desc = (TextView) itemView.findViewById(R.id.tv_title_item_pic_recommend_t);
+            username = (TextView) itemView.findViewById(R.id.tv_username_pic_item_recommend_t);
+            watchCount = (TextView) itemView.findViewById(R.id.tv_count_item_pic_recommend_t);
         }
     }
 }

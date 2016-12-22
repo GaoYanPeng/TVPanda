@@ -4,6 +4,8 @@
     android:layout_height="match_parent">
 
     <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:paddingRight="@dimen/dian_5dp"
+        android:paddingLeft="@dimen/dian_5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/rv_common">

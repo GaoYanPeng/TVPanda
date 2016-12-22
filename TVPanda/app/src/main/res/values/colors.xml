@@ -10,4 +10,5 @@
     <color name="colorTextGrayLineT">#2ed29c</color>
     <color name="colorWhite">#fff</color>
     <color name="colorGray">#aca9a9</color>
+    <color name="colorGrayT">#70000000</color>
 </resources>

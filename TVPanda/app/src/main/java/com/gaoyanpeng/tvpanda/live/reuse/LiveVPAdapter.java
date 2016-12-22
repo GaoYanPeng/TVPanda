@@ -1,9 +1,10 @@
-package com.gaoyanpeng.tvpanda.live;
+package com.gaoyanpeng.tvpanda.live.reuse;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.util.Log;
+
+import com.gaoyanpeng.tvpanda.live.LiveBean;
 
 /**
  * Created by Administrator on 2016/12/20.
@@ -47,9 +48,7 @@ public class LiveVPAdapter extends FragmentStatePagerAdapter {
 //    获取字符串里面不同的total
     public static String getMessage (int pos) {
         return Content[pos];
-        /**
-         * afklalskjf
-         */
+
     }
 
 }

@@ -64,7 +64,7 @@ public class RecommendFragment extends BaseFragment {
         lRecyclerViewAdapter = new LRecyclerViewAdapter(adapter);
         rv.setAdapter(lRecyclerViewAdapter);
         rv.setLayoutManager(new LinearLayoutManager(mContext));
-        rv.addItemDecoration(new DividerItemDecoration(mContext, DividerItemDecoration.VERTICAL));
+        //rv.addItemDecoration(new DividerItemDecoration(mContext, DividerItemDecoration.VERTICAL));
         headView = LayoutInflater.from(mContext).inflate(R.layout.banner_common,null);
         banner = (Banner) headView.findViewById(R.id.banner_common);
         lRecyclerViewAdapter.addHeaderView(headView);
@@ -85,13 +85,13 @@ public class RecommendFragment extends BaseFragment {
 
                 for (int i = 0; i < response.getData().size(); i++) {
                     list.add(response.getData().get(i).getBigimg());
-                    bannerTitle.add(response.getData().get(i).getTitle());
+//                    bannerTitle.add(response.getData().get(i).getTitle());
                 }
                 banner.setImages(list);
                 banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE);
                 banner.setImageLoader(new ImageLoad());
-                banner.setBannerAnimation(Transformer.BackgroundToForeground);
-                banner.setBannerTitles(bannerTitle);
+                banner.setBannerAnimation(Transformer.DepthPage);
+//                banner.setBannerTitles(bannerTitle);
                 banner.start();
             }
 

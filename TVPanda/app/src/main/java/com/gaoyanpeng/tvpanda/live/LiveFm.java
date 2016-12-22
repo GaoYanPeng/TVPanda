@@ -7,11 +7,11 @@ import android.support.v4.view.ViewPager;
 import android.util.Log;
 
 import com.gaoyanpeng.tvpanda.R;
+import com.gaoyanpeng.tvpanda.api.Api;
 import com.gaoyanpeng.tvpanda.base.BaseFragment;
+import com.gaoyanpeng.tvpanda.live.reuse.LiveVPAdapter;
 import com.gaoyanpeng.tvpanda.ok.NetTool;
 import com.gaoyanpeng.tvpanda.ok.onHttpCallBack;
-
-import okhttp3.OkHttpClient;
 
 /**娱乐赵宁来做 记住只能在自己的包下面做 别的包只能看不要改动
  * Created by 高研鹏 on 2016/12/17.
@@ -49,7 +49,7 @@ public class LiveFm extends BaseFragment {
 
 //    网络请求方法
     protected void OkNetMethod() {
-        NetTool.getInstance().startRequest(URLLive.LIIVEURL, LiveBean.class, new onHttpCallBack<LiveBean>() {
+        NetTool.getInstance().startRequest(Api.LIIVEURL, LiveBean.class, new onHttpCallBack<LiveBean>() {
             @Override
             public void onSuccess(LiveBean response) {
                 Log.d("LiveFm", "网络请求成功");

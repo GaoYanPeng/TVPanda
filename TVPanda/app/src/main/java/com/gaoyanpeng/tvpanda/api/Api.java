@@ -46,5 +46,14 @@ public class Api {
     public static final String HOME_REUSE_PAGE_URL = "&pageno=";
     // 复用上拉加载后半部分
     public static final String HOME_REUSE_PAGE_LOAD_URL = "&pagenum=20&sproom=1&__version=2.1.3.1585&__plat=android&banner=1";
+    //   娱乐接口
+    public static String LIIVEURL = "http://api.m.panda.tv/ajax_get_live_list_by_cate?cate=yzdr&pageno=1&pagenum=20&sproom=1&__version=2.1.3.1585&__plat=android";
+    //   娱乐拼接的两个接口
+    public static String CATEHead = "http://api.m.panda.tv/ajax_get_live_list_by_cate?cate=";
+    /**
+     * 娱乐未
+     */
+    public static String CATEFoot = "&pageno=1&pagenum=20&sproom=1&__version=2.1.3.1585&__plat=android";
+
 
 }

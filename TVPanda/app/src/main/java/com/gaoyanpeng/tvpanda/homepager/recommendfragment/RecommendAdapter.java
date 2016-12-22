@@ -18,7 +18,7 @@ import com.gaoyanpeng.tvpanda.R;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/**推荐自己的
  * Created by 裴亮 on 16/12/21.
  */
 
