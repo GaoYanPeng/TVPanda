@@ -54,11 +54,14 @@ public class CapsulationViewHolder extends RecyclerView.ViewHolder {
      * @param layoutItemId
      * @return
      */
-    public static CapsulationViewHolder getViewHolder(View itemView, ViewGroup viewGroup, int layoutItemId) {
+    public static CapsulationViewHolder
+    getViewHolder(View itemView,
+                  ViewGroup viewGroup, int layoutItemId) {
         CapsulationViewHolder holder;
         if (itemView == null) {
             Context mContext = viewGroup.getContext();
-            itemView = LayoutInflater.from(mContext).inflate(layoutItemId, viewGroup, false);
+            itemView = LayoutInflater.from(mContext).inflate
+                    (layoutItemId, viewGroup, false);
             holder = new CapsulationViewHolder(itemView);
             itemView.setTag(holder);
         } else {
@@ -74,7 +77,8 @@ public class CapsulationViewHolder extends RecyclerView.ViewHolder {
      * @param layoutItemId
      * @return
      */
-    public static CapsulationViewHolder getViewHolder(ViewGroup viewGroup, int layoutItemId) {
+    public static CapsulationViewHolder getViewHolder
+    (ViewGroup viewGroup, int layoutItemId) {
         return getViewHolder(null, viewGroup, layoutItemId);
     }
 
@@ -120,11 +124,13 @@ public class CapsulationViewHolder extends RecyclerView.ViewHolder {
      * @param onClickListener
      * @return
      */
-    public CapsulationViewHolder setViewClick(int id, View.OnClickListener onClickListener) {
+    public CapsulationViewHolder setViewClick
+    (int id, View.OnClickListener onClickListener) {
         getView(id).setOnClickListener(onClickListener);
         return this;
     }
-    public CapsulationViewHolder setItemClick (View.OnClickListener onClickListener){
+    public CapsulationViewHolder setItemClick
+            (View.OnClickListener onClickListener){
         itemView.setOnClickListener(onClickListener);
         return  this;
     }
