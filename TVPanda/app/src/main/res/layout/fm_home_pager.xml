@@ -4,4 +4,37 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/tab_home">
+
+        </android.support.design.widget.TabLayout>
+
+        <ImageButton
+            android:id="@+id/iv_add_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@mipmap/shouye_icon_tianjia"
+            android:layout_centerVertical="true"/>
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:id="@+id/vp_home">
+
+    </android.support.v4.view.ViewPager>
+
 </LinearLayout>
