@@ -7,13 +7,12 @@
 
 
     <com.youth.banner.Banner
-
         android:layout_marginTop="@dimen/dp_6"
         android:paddingLeft="@dimen/dp_6"
         android:paddingRight="@dimen/dp_6"
         android:id="@+id/banner_common"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dian_135dp"
+        android:layout_height="@dimen/dian_150dp"
         android:layout_marginBottom="@dimen/dian_10dp"
         app:image_scale_type="fit_xy">
 

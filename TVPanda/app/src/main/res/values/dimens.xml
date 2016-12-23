@@ -12,6 +12,6 @@
     <dimen name="dian_100dp">100dp</dimen>
     <dimen name="dian_10sp">10sp</dimen>
     <dimen name="dian_12sp">12sp</dimen>
-    <dimen name="dian_135dp">135dp</dimen>
+    <dimen name="dian_150dp">150dp</dimen>
     <dimen name="dian_25dp">25dp</dimen>
 </resources>

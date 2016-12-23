@@ -10,16 +10,16 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".main.MainActivity">
+        <activity android:name=".once.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".seek.SeekAty"/>
-        <activity android:name=".set.SettingAty"/>
-        <activity android:name=".game.gamedetails.GameDetailsAty"/>
+        <activity android:name=".secondary.seek.SeekAty"/>
+        <activity android:name=".secondary.set.SettingAty"/>
+        <activity android:name=".once.game.gamedetails.GameDetailsAty"/>
     </application>
 
 </manifest>
