@@ -11,4 +11,5 @@
     <color name="colorWhite">#fff</color>
     <color name="colorGray">#aca9a9</color>
     <color name="colorGrayT">#70000000</color>
+    <color name="main_back">#fff6fcff</color>
 </resources>
