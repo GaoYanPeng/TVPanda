@@ -31,7 +31,7 @@
             android:textColor="@color/colorWhite"
             android:background="@color/colorGrayT"
             android:textSize="@dimen/dian_10sp"
-            android:text="@string/live_title"/>
+          />
 
     </RelativeLayout>
 

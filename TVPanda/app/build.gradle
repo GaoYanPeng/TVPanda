@@ -17,10 +17,22 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    android {
+
+        sourceSets {
+            main {
+                jniLibs.srcDirs = ['libs']
+
+            }
+
+        }
+
+    }
+
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -34,8 +46,8 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
     compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
-
     // 第三方
     compile 'com.github.jdsjlzx:LRecyclerView:1.3.0'
     compile 'com.youth.banner:banner:1.4.4'
+    compile files('libs/jpush-android_v3.0.0.jar')
 }

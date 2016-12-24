@@ -3,6 +3,8 @@ package com.gaoyanpeng.tvpanda.app;
 import android.app.Application;
 import android.content.Context;
 
+import cn.jpush.android.api.JPushInterface;
+
 /**
  * Created by 高研鹏 on 2016/12/21.
  */
@@ -13,6 +15,9 @@ public class MyApp extends Application {
     public void onCreate() {
         super.onCreate();
         mContext = this;
+        //推送初始化
+        JPushInterface.setDebugMode(true);
+        JPushInterface.init(this);
     }
 
     public static Context getContext() {

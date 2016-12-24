@@ -24,6 +24,8 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
     //定义当前的时间
     private long firstTime = 0;
     private TabLayout.Tab mTab;
+    //推送
+    public static boolean isForeground = false;
 
     @Override
     protected int getLayout() {
