@@ -14,4 +14,6 @@
     <dimen name="dian_12sp">12sp</dimen>
     <dimen name="dian_150dp">150dp</dimen>
     <dimen name="dian_25dp">25dp</dimen>
+    <dimen name="dian_30dp">30dp</dimen>
+    <dimen name="dian_35dp">35dp</dimen>
 </resources>

@@ -1,4 +1,4 @@
-package com.gaoyanpeng.tvpanda.view;
+package com.gaoyanpeng.tvpanda.view.pulltozoo;
 
 import android.content.Context;
 import android.content.res.TypedArray;

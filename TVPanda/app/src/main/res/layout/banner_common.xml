@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <com.youth.banner.Banner
         android:layout_marginTop="@dimen/dp_6"
         android:paddingLeft="@dimen/dp_6"

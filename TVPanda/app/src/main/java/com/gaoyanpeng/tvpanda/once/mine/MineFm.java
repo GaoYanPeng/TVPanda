@@ -5,7 +5,7 @@ import android.view.View;
 
 import com.gaoyanpeng.tvpanda.R;
 import com.gaoyanpeng.tvpanda.base.BaseFragment;
-import com.gaoyanpeng.tvpanda.view.PullToZoomScrollViewEx;
+import com.gaoyanpeng.tvpanda.view.pulltozoo.PullToZoomScrollViewEx;
 
 /**
  * 我的

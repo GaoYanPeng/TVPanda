@@ -4,7 +4,7 @@
               android:layout_height="match_parent"
               android:background="@color/colorGrayLineX"
               android:orientation="vertical">
-<com.gaoyanpeng.tvpanda.view.PullToZoomScrollViewEx
+<com.gaoyanpeng.tvpanda.view.pulltozoo.PullToZoomScrollViewEx
     android:id="@+id/scrollView"
     android:overScrollMode="never"
     android:layout_width="match_parent"

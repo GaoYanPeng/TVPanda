@@ -1,4 +1,4 @@
-package com.gaoyanpeng.tvpanda.view;
+package com.gaoyanpeng.tvpanda.view.pulltozoo;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.gaoyanpeng.tvpanda.R;
+import com.gaoyanpeng.tvpanda.view.pulltozoo.IPullToZoom;
 
 
 /**
