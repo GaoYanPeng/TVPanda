@@ -7,12 +7,15 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.gaoyanpeng.tvpanda.R;
 import com.gaoyanpeng.tvpanda.api.Api;
 import com.gaoyanpeng.tvpanda.base.BaseActivity;
 import com.gaoyanpeng.tvpanda.ok.NetTool;
 import com.gaoyanpeng.tvpanda.ok.onHttpCallBack;
+import com.gaoyanpeng.tvpanda.once.game.gamedetails.gamedatailsitem.GameItemAty;
+import com.gaoyanpeng.tvpanda.onclick.RecyclerViewOnClick;
 
 /**
  * Created by 高研鹏 on 2016/12/20.
@@ -62,10 +65,20 @@ mReturn.setOnClickListener(this);
         Log.d("GameDetailsAty", PHAT);
         NetTool.getInstance().startRequest(PHAT, GameDetailsBean.class, new onHttpCallBack<GameDetailsBean>() {
             @Override
-            public void onSuccess(GameDetailsBean response) {
+            public void onSuccess(final GameDetailsBean response) {
                 mGameDetailsAdapter.setGameDetailsBean(response.getData());
                 mRecyclerView.setAdapter(mGameDetailsAdapter);
-
+               mGameDetailsAdapter.setRecyclerViewOnClick(new RecyclerViewOnClick() {
+                   @Override
+                   public void onClick(int pos) {
+                       Toast.makeText(GameDetailsAty.this, "pos:" + pos, Toast.LENGTH_SHORT).show();
+                       Intent intent1 = new Intent(GameDetailsAty.this, GameItemAty.class);
+                       String id = response.getData().getItems().get(pos).getId();
+                       Log.d("GameDetailsAty", id);
+                       intent1.putExtra("id",id);
+                       startActivity(intent1);
+                   }
+               });
             }
 
             @Override

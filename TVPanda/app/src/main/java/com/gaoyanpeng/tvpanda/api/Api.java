@@ -54,6 +54,15 @@ public class Api {
      * 娱乐未
      */
     public static String CATEFoot = "&pageno=1&pagenum=20&sproom=1&__version=2.1.3.1585&__plat=android";
+    /**
+     * 游戏二级界面详情前
+     */
+     public static final String  UrlHeard = "http://api.m.panda.tv/ajax_get_liveroom_baseinfo?roomid=";
+    /**
+     * 后
+     */
+    public static final String UrlHou  = "&slaveflag=1&type=json&__version=2.1.3.1585&__plat=android";
+    public static  final String URLID  = "http://www.panda.tv/";
 
 
 }

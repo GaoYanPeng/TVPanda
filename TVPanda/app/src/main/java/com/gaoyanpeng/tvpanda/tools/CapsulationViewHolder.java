@@ -21,7 +21,7 @@ public class CapsulationViewHolder extends RecyclerView.ViewHolder {
     //但是 Key 固定是 int 类型
     //用他来存放所有的 View,key 就是 View 的 id;
     private SparseArray<View> views;
-    private View itemView;//行布局 视图
+    public  View itemView;//行布局 视图
 
     public CapsulationViewHolder(View itemView) {
         super(itemView);

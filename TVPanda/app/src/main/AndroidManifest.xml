@@ -47,6 +47,7 @@
         <activity android:name=".secondary.seek.SeekAty"/>
         <activity android:name=".secondary.set.SettingAty"/>
         <activity android:name=".once.game.gamedetails.GameDetailsAty"/>
+        <activity android:name=".once.game.gamedetails.gamedatailsitem.GameItemAty"/>
         <!--======================================================-->
 
         <!-- For test only 测试状态通知栏，需要打开的Activity -->
