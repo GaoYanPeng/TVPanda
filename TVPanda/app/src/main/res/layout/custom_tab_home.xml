@@ -7,12 +7,14 @@
         android:id="@+id/iv_icon_custom_tab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="2dp"
         android:layout_gravity="center_vertical"
         android:src="@mipmap/home_list_item_bg"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="2dp"
         android:textColor="@drawable/title_color"
         android:layout_gravity="center_vertical"
         android:id="@+id/tv_title_custom_tab"/>

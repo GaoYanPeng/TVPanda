@@ -12,11 +12,46 @@
         android:layout_weight="0.15"/>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
         <android.support.design.widget.TabLayout
             android:id="@+id/game_item_tab"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             />
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent">
+
+          <ImageButton
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="match_parent"
+              android:background="@color/colorTextGrayLineT"
+              android:src="@mipmap/liveroom_guanzhu"
+
+              android:id="@+id/imageButton" />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="match_parent"
+              android:background="@color/colorTextGrayLineT"
+              android:text="订阅"
+              android:gravity="center_vertical"/>
+
+      </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
 
         <android.support.v4.view.ViewPager
             android:id="@+id/game_item_vp"
